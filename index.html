@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="code.js"></script>
+    <!-- <link rel="stylesheet" href="style.css" />
+   -->
+    <title>Lab_Task</title>
+  </head>
+  <body>
+    <label for="Name">Name</label>
+    <input type="text" id="nameid" />
+    <ul>
+      <label for="gender">Gender</label>
+      <select id="genderOpt" onchange="change()">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </ul>
+
+    <ul>
+      <label for="age">Age</label>
+      <input type="text" id="ageid" />
+    </ul>
+
+    <ul>
+      <label for="city">City</label>
+      <input type="text" id="cityid" />
+    </ul>
+
+    <button type="reset" onclick="reset()">Reset</button>
+    <button onclick="adding();">Add</button>
+    <button onclick="update();">Update</button>
+
+    <ul>
+      <table id="table" border="1">
+        <tr style="color: salmon">
+          <td>NAME</td>
+          <td>GENDER</td>
+          <td>AGE</td>
+          <td>CITY</td>
+          <td>ACTION</td>
+        </tr>
+      </table>
+    </ul>
+  </body>
+</html>
